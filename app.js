@@ -120,6 +120,14 @@ if (message.channel.id === '392898148634198017')
             message.delete()
             message.author.send("You are now Verify You can chat now on Global chat")
 }
+if(msg === prefix + 'VERIFY') {
+let info = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
+        if(!info) return message.channel.sendMessage("You did not specify a user Mention");
+      let member = message.mentions.members.first();
+      let mention = message.mentions.users.first();
+var role = member.guild.roles.find('name', 'Verified');
+member.addrole(role)
+}
 
 
 
