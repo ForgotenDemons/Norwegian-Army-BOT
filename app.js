@@ -128,6 +128,8 @@ let info = message.guild.member(message.mentions.users.first()) || message.guild
 var role = member.guild.roles.find('name', 'Verified');
 member.addrole(role)
 }
+if(msg === prefix + 'ACADEMY') {
+message.channel.send('@everyone Go to academy get more activites https://web.roblox.com/games/1256144054/NA-Asker-Academy-V1#');
 
 
 
